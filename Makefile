@@ -11,7 +11,7 @@ SRC := mysudo.c
 all: $(TARGET) post
 
 $(TARGET): $(SRC)
-	$(CC) $(CFLAGS) $(LDFLAGS) -o $@ $^
+	$(CC) $(CFLAGS) $(LDFLAGS) -o $@ $<
 
 post:
 	sudo chown root:root $(TARGET)
